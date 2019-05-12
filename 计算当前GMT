@@ -1,0 +1,10 @@
+import time
+# 显示的是GMT（格林尼治时间）
+currentTime = time.time()
+totalSeconds = int(currentTime)
+currentSecond = totalSeconds % 60
+totalMinutes = totalSeconds // 60
+currentMinute = totalMinutes % 60
+totalHours = totalMinutes // 60
+currentHour = totalHours % 24
+print("Current time is", currentHour, ":", currentMinute, ":", currentSecond, "GMT")
